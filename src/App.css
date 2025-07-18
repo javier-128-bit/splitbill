@@ -165,3 +165,57 @@ form h2 {
   margin-bottom: 1.6rem;
   text-align: center;
 }
+
+@media (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+
+  .app {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+    padding: 1rem;
+  }
+
+  .sidebar ul {
+    font-size: 1.3rem;
+  }
+
+  .sidebar li {
+    grid-template-columns: 4rem 1fr auto;
+    padding: 1rem;
+  }
+
+  .sidebar li img {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .sidebar > .button {
+    float: none;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+  }
+
+  .form-add-friend,
+  .form-split-bill {
+    grid-template-columns: 1fr;
+    padding: 2rem;
+  }
+
+  form h2 {
+    font-size: 1.8rem;
+  }
+
+  input,
+  select {
+    font-size: 1.4rem;
+    padding: 0.6rem;
+  }
+
+  form .button {
+    grid-column: 1;
+    width: 100%;
+  }
+}
